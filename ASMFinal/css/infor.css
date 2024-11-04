@@ -1,0 +1,149 @@
+
+/*==========phần tin tức=========*/
+.contaner{
+    gap: 15px;
+    display: flex;
+    width: 90%;
+    margin: 30px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contaner .tintuc75{
+    width: 75%;
+    gap: 15px;
+}
+.contaner .tintuc75 .row{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.contaner .con65{
+    width: 65%;
+}
+.contaner .con65 img{
+    width: 100%;
+}
+.contaner .con65 h2{
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contaner .con65 h2:hover{
+    color: red;
+}
+.contaner .con65 p{
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    line-height: 1.5;
+}
+.contaner .con35{
+    width: 35%;
+}
+.contaner .con35 img{
+    width: 100%;
+}
+.contaner .con35 h2{
+    margin-top: 10px;
+    font-size: 22px;
+    border-bottom: 1px solid gray;
+    padding-bottom:10px ;
+}
+.contaner .con35 ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    color: gray;
+}
+.contaner .con35 li{
+    line-height: 1.5;
+    border-bottom: 1px solid gray;
+    padding: 10px 0px;
+}
+.contaner .con35 li:hover{
+    color: black;
+}
+.contaner .tintuc75 .tintucngang .img{
+    overflow: hidden;
+    width: 30%;
+}
+.contaner .tintuc75 .tintucngang .img img{
+    width: 100%;
+}
+.contaner .tintuc75 .tintucngang .img img:hover{
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+.contaner .tintuc75 .tintucngang .thongtin{
+    width: 70%;
+    margin-top: -5px;
+}
+.contaner .tintuc75 .tintucngang .thongtin h2{
+    padding-bottom: 5px;
+}
+.contaner .tintuc75 .tintucngang .thongtin h2:hover{
+    color: red;
+}
+.contaner .tintuc75 .tintucngang .thongtin p{
+    color: gray;
+    line-height: 1.5;
+}
+
+.contaner .tintuc25{
+    width: 25%;
+}
+.contaner .tintuc25 img{
+    width: 100%;
+}
+.contaner .tintuc25 .luotxem p{
+    color: black;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(167, 162, 162);
+    padding-bottom: 10px;
+}
+.contaner .tintuc25 .luotxem ul{
+    margin: 0px;
+    color: gray;
+    padding-left: 20px;
+}
+.contaner .tintuc25 .luotxem li{
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.contaner .tintuc25 .luotxem li:hover{
+    color: black;
+}
+.contaner .tintuc25 .luotxem .biquyet{
+    color: rgb(59, 58, 58);
+    font-size: 18px;
+    line-height: 1.3;
+    padding: 10px 0px;
+    border-bottom: 1px solid gray;
+}
+.contaner .tintuc25 .luotxem .biquyet:hover{
+    color: black;
+}
+.contaner .tintuc25 .card{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.contaner .tintuc25 .card div{
+    width: 50%;
+}
+.contaner .tintuc25 .card div img{
+    width: 100%;
+}
+.contaner .tintuc25 .card div p{
+    color: gray;
+    font-size: 13px;
+    line-height: 1.3;
+}
+.contaner .tintuc25 .card div p:hover{
+    color: black;
+}
+
+/*=====================================*/

@@ -1,0 +1,16 @@
+.Ktrai{
+    width: 50%;
+    min-height: 500px;
+    float: left;
+    text-align: center;
+    background-color: beige;
+}
+.Kphai{
+    width: 50%;
+    min-height: 500px;
+    float: right;
+    background-color: bisque;
+}
+.hinhnho img{
+    width: 20%;
+}

@@ -1,0 +1,37 @@
+.sanPham{
+    width: calc(25% - 55px);
+    float: left; 
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px gray;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+}
+.ten{
+    font-size: larger;
+    font-variant: small-caps;
+    color: blue;
+}
+.sanPham img{
+    max-width: 90%;
+    height: 180px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: black;
+    
+}
+.sanPham img:hover{
+   
+    box-shadow: 0px 0px 5px red;
+}
+.sanPham del{
+    color: gray;
+    text-align: center;  
+}
+.sanPham span{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/giohang.js"></script>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+    img{
+        width: 100%;
+    }
+    .giohang{
+        border: 1px solid #ddd;
+        box-shadow: 2px 2px 4px #ddd;
+        padding: 20px;
+        margin: auto;
+        width: 1100px;
+    }
+    .item-giohang{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .item-giohang .anh img{
+        width: 60px;
+        height: 60px;
+    }
+    .item-giohang .anh,.soluong,.tongtien, .hanhdong{
+        flex: 1;
+        margin-left: 20px;
+    }
+    .item-giohang .gia{
+    flex: 2;
+    }
+    .item-giohang .ten{
+        flex: 3;
+    }
+    input{
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    button{
+        padding: 10px;
+        border: 1px solid #ddd;
+        font-weight: bold;
+    }
+    button:hover{
+        background-color:wheat ;
+    }
+
+    
+</style>
+<body>
+    <div class="giohang" id="giohang">
+        <!-- <div class="item-giohang">
+            <div class="anh">
+                <img src="img/10.webp" alt="">
+            </div>
+            <div class="ten">
+                giày adidas
+            </div>
+            <div class="gia">
+                <span class="giagoc">2.000.000</span>
+            </div>
+            <input type="number" class="soluong" value="1">
+            <p class="tongtien">2.000.000</p>
+            <div class="hanhdong">
+                <button>xóa</button>
+            </div>
+        </div> -->
+    </div>
+    <script>
+        hienThiDanhSachItemGioHang()
+
+        function hienThiDanhSachItemGioHang(){
+            var danhSachItemGioHang = layGioHangTuLocalStorage();
+            var HTML=chuyenDanhSachItemSangHTML(danhSachItemGioHang);
+            var nodeGioHang=document.getElementById('giohang');
+            nodeGioHang.innerHTML=HTML;
+        }
+
+
+    function chuyenDanhSachItemSangHTML(danhSachItemGioHang){
+        var htmlTong='';
+        for(var i=0; i<danhSachItemGioHang.length; i++){
+            htmlTong=htmlTong+chuyenDoiTuongItemSangHTML(danhSachItemGioHang[i]);
+        }
+        return htmlTong;
+        }
+
+
+
+    function chuyenDoiTuongItemSangHTML(itemGioHang){ //chuyen doi tuong thnah html
+        var html = '';
+        html = html + '<div class="item-giohang">\n'+
+        '            <div class="anh">\n'+
+        '                <img src="img/10.webp" alt="">\n'+
+        '            </div>\n'+
+        '            <div class="ten">\n'+
+        '                giày adidas\n'+
+        '            </div>\n'+
+        '            <div class="gia">\n'+
+        '                <span class="giagoc">2.000.000</span>\n'+
+        '            </div>\n'+
+        '            <input type="number" class="soluong" value="1">\n'+
+        '            <p class="tongtien">2.000.000</p>\n'+
+        '            <div class="hanhdong">\n'+
+        '                <button>xóa</button>\n'+
+        '            </div>\n'+
+        '        </div>'
+        return html;
+        }
+    </script>
+</body>
+</html>

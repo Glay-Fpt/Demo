@@ -1,0 +1,242 @@
+
+/*=====================PHAN SAN PHAM=========================*/
+.contaner{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.contaner aside{
+    background-color: white;
+    width:20% ;
+    height: 300px;
+}
+.contaner aside img{
+    width: 100%;
+}
+.contaner aside .menu p{
+margin: 0px;
+text-align: center;
+font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: black;
+color: white;
+padding: 8px 16px;
+}
+.contaner aside .menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contaner aside .menu li{
+    margin: 0px;
+}
+.contaner aside .menu li img{
+    width: 25px;
+    margin: 0px 10px;
+}
+.contaner aside .menu li a{
+    font-size: 20px;
+    display: block;
+    margin: 15px 5px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contaner aside .menu li a:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 5px gray;
+}
+.contaner article{
+    background-color: white;
+    width:80% ;
+    box-shadow: 0 0 5px gray;
+}
+.contaner article .col4{
+    display: flex;
+}
+.contaner article .col4 .row{
+    width: 25%;
+    border: 1px solid black;
+    margin: 10px;
+}
+.contaner article .col4 .row:hover{
+    transform: scale(1.02);
+}
+.contaner article .col4 .row img{
+    width: 100%;
+}
+.contaner article .col4 .row .ten{
+    margin: 10px 20px 10px 10px;
+}
+.contaner article .col4 .row .ten a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+}
+.contaner article .col4 .row .ten a:hover{
+    color: black;
+}
+.contaner article .col4 .row .danhgia{
+    margin: 10px 20px 10px 10px;
+}
+.contaner article .col4 .row .danhgia img{
+    width: 16px;
+    height: 16px;
+}
+.contaner article .col4 .row .gia{
+    margin: 10px 20px 10px 10px;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*==============*/
+footer{
+    border-top:3px solid black ;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+footer .col3{
+    width: 25%;
+    margin: 10px 10px 10px 20px;
+}
+footer .col3 h2{
+    font-weight: bold;
+    text-shadow: 0 0 5px wheat;
+}
+footer .col3 .chitiet{
+    color: gray;
+}
+.thuonghieu{
+    clear: both;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 8px 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ .thuonghieu p{
+    text-shadow: 3px 3px 5px black ;
+}
+
+/*==========================Trang đăng nhập=======================================*/
+.contaner .trangchu{
+    margin: 20px;
+}
+.contaner .trangchu a{
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contaner .trangchu a:hover{
+    color:green;
+    border-bottom: 2px solid green;
+}
+ form{
+    margin: 40px 290px;
+   border-radius:5px ;
+    width: 500px;
+    text-align: center;
+    background-color: gainsboro;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+}
+form .form-tieude{
+    padding-top: 20px;
+    text-transform:uppercase ;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+form .taikhoan input{
+    padding: 10px 16px;
+    width: 90%;
+    margin-bottom: 20px;
+    border: none;
+}
+form .matkhau input{
+    padding: 10px 16px;
+    width: 90%;
+    margin-bottom: 20px;
+    border: none;
+}
+form .taikhoan input:focus{
+    background-color: ghostwhite;
+}
+form .matkhau input:focus{
+    background-color: ghostwhite;
+}
+form .button{
+    margin-left: 21px;
+    margin-bottom: 20px;
+}
+form .button a{
+    margin-left: 190px;
+    color: green;
+    text-decoration: none;
+}     
+form .button a:hover{
+    color: red;
+}
+form .sumit button{
+    width:90%;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    background-color:green;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form .sumit button:hover{
+    background-color: gray;
+}
+form .khac {
+    margin: 30px;
+    padding-bottom: 30px;
+    color: gray;
+}
+form .khac a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: green;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+form .khac a:hover{
+    background-color: gray;
+}
+.dathang{
+    margin: 20px;
+     
+}
+.dathang button{
+    padding: 10px 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    background-color: gray;
+    border: 1px solid white;
+}
+.dathang button:hover{
+    background-color: antiquewhite;
+}
+
+
+/*==========Trang tin tức==========*/

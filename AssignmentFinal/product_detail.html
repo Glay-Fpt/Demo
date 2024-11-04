@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUANS | MUA ONLINE QUẦN ÁO VÀ PHỤ KIỆN NAM NỮ THỜI TRANG</title>
+    <link rel="stylesheet" href="./css/product_detail.css">
+    <link rel="icon" type="image/png" href="IMG/TUANS.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="/ASM copy/js/cart.js"></script>
+</head>
+
+<body onload="hientt()">
+    <div class="box">
+        <div class="headersreach">
+            <div class="headermid">
+                <div class="headermid-left">
+                    <div class=""><a href="index.html"><img src="IMG/TUANS.png" width="100px"></a></div>
+                    <div class="p1">
+                        <input type="text" placeholder="Tìm Kiếm">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <p><i class="fa-solid fa-location-dot"></i><a href="#">VỊ TRÍ</a> </p>
+                <p><i class="fa-solid fa-phone"></i>GỌI ĐẶT HÀNG : 0123456789 </p>
+            </div>
+            <button onclick="toggleCart()">Cart</button>
+            <div id="cart">
+                <h2>Cart</h2>
+                <div id="cart-items"></div>
+                <p>Total: $<span id="total">0</span></p>
+                <button id="checkout-btn" onclick="checkout()">Checkout</button>
+            </div>
+
+            <div class="headerbottom">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">NAM</a>
+                            <ul>
+                                <li><a href="#">ÁO NAM</a></li>
+                                <li><a href="#">QUẦN NAM</a></li>
+                                <li><a href="#">ÁO KHOÁC NAM</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">NỮ</a>
+                            <ul>
+                                <li><a href="#">ÁO NỮ</a></li>
+                                <li><a href="#">QUẦN NỮ</a></li>
+                                <li><a href="#">ÁO KHOÁC NỮ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">BỘ SƯU TẬP</a>
+                            <ul>
+                                <li><a href="#">MÙA XUÂN 2024</a></li>
+                                <li><a href="#">MÙA HÈ 2024</a></li>
+                                <li><a href="#">PREMIUM</a></li>
+                                <li><a href="#">TUANS X ONE PIECE</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">PHỤ KIỆN</a>
+                            <ul>
+                                <li><a href="#">NÓN</a></li>
+                                <li><a href="#">TÚI VẢI ĐEO CHÉO</a></li>
+                                <li><a href="#">BALO</a></li>
+                                <li><a href="#">VÍ</a></li>
+
+                            </ul>
+                        </li>`
+                        <li><a href="report.html">GÓP Ý</a></li>
+                    </ul>
+                </nav>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                GIỎ HÀNG</a></li>
+                        <li><a href="login.php"> ĐĂNG NHẬP / ĐĂNG KÍ</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+    <div class="contaner">
+        <div class="row">
+            <div class="col-40">
+                <div class="col40">
+                    <div class="col10" id="hinhphu">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                    <div class="col30">
+                        <img id="hinhchinh" src="" alt="">
+                    </div>
+                </div>
+                <div class="mota">
+                    <span>Mô tả</span>
+                    <p>
+                        Áo Đến Từ Nhà YAME Luôn Mang Đến Cho Bạn Cảm Giác Thoải Mái Nhất Khi Mặc
+                    </p>
+                    <p>
+                        Hỗ trợ ấn định <br>
+                        Thân trên với công nghệthun thấm thoát ấn định được thiết kế để hỗ trợ các chuyển động thẳng và
+                        sang hai bên
+                    </p>
+                    <p>
+                        Công nghệ thun thoáng mát <br>
+                        Linh hoạt thoáng khí không sợ bị bí
+                    </p>
+                </div>
+            </div>
+            <div class="col60">
+                <div class="card">
+                    <div class="ten">
+                        <h2 id="tensp"></h2>
+                        <div class="danhgia">
+                            <img src="img/star.png" alt="" width="15px" height="10px">
+                            <img src="img/star.png" alt="" width="15px" height="10px">
+                            <img src="img/star.png" alt="" width="15px" height="10px">
+                            <img src="img/star.png" alt="" width="15px" height="10px">
+                            <img src="img/star.png" alt="" width="15px" height="10px">
+                            (20 lượt đánh giá của khách hàng)
+                        </div>
+                        <div class="gia" id="gia">
+                            <del></del> <span></span>
+                            <p style="color: gray; font-size: 20px;">Mã: SS0006460</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+
+
+
+                <div class="thongtin">
+                    <p>Thương Hiệu Yame Luôn Mang Đến Cho Bạn Sự Phục Vụ Đến Từ Tận Đáy Lòng, Sự Hài Lòng Của Bạn Là
+                        Niềm Vui Của Chúng Tôi.</p>
+                </div>
+                <div class="kichthuoc">
+                    <p>Size:</p>
+                    <div class="size">
+                        <a href="">38</a>
+                        <a href="">39</a>
+                        <a href="">40</a>
+                        <a href="">41</a>
+                        <a href="">42</a>
+                        <a href="">43</a>
+                        <a href="">44</a>
+                    </div>
+                </div>
+                <div class="mua" id="products" >
+                    <button onclick="addToCart('Áo Thun Siu Co Giãn', 10)">Thêm vào giỏ hàng</button>
+                    <button style="width: 200px;">Mua ngay</button>
+                </div>
+                <div class="chinhsach">
+                    <li>Miễn phí vận chuyển toàn quốc cho đơn hàng trên 1tr.</li>
+                    <li>Giao nhanh 2h trong nội thành HCM.</li>
+                    <li>Thời gian vận chuyển trung bình 3-4 ngày.</li>
+                </div>
+                <div class="diachi">
+                    <p style="font-size: 18px; font-variant: small-caps; font-weight: 100;">Visit our store in HCM city
+                    </p>
+                    <p><b>ĐỊA CHỈ: </b>139/13 Phường 6 Quận Gò Vấp, TP.Hồ Chí Minh</p>
+                    <p><b>PHONE: </b>0123456789</p>
+                    <a href="">Google map</a>
+                </div>
+            </div>
+        </div>
+        <div class="tuongtu">
+            <p>Có Thể Bạn Cũng Tìm</p>
+            <div class="row">
+                <div class="col25">
+                    <a class="ab" href="product_detail.html" onclick="laytt(x)"><img src="/IMG/f1cotton2.jpg"
+                            alt=""></a>
+                    <div class="ten"><a href="">Áo Thun Siu Co Giãn</a></div>
+                    <div class="danhgia">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                    </div>
+                    <div class="gia"> 500,000đ</div>
+                </div>
+                <div class="col25">
+                    <img src="IMG/f1polo.jpg" alt="">
+                    <div class="ten"><a href="">Áo POLO Cực Đẹp</a></div>
+                    <div class="danhgia">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                    </div>
+                    <div class="gia"><del style="color: gray; font-size: 15px;">500,000đ</del> 250,000đ</div>
+                </div>
+                <div class="col25">
+                    <img src="IMG/f1quandai2.jpg" alt="">
+                    <div class="ten"><a href="">Quần Dài Siu Cool</a></div>
+                    <div class="danhgia">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                    </div>
+                    <div class="gia"><del style="color: gray; font-size: 15px;">700,000đ</del>500,000đ</div>
+                </div>
+                <div class="col25">
+                    <img src="IMG/f1jacket.jpg" alt="">
+                    <div class="ten"><a href="">Áo Khoác Dù</a></div>
+                    <div class="danhgia">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                    </div>
+                    <div class="gia">500,000đ</div>
+                </div>
+                <div class="col25">
+                    <img src="IMG/f1cotton2.jpg" alt="">
+                    <div class="ten"><a href="">Áo Đua Xe</a></div>
+                    <div class="danhgia">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                    </div>
+                    <div class="gia"><del style="color: gray; font-size: 15px;">450,000đ</del> 400,000đ</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo">
+        <a href="https://zalo.me/0931632195/"><img src="https://page.widget.zalo.me/static/images/2.0/Logo.svg"
+                width="100%"></a>
+    </div>
+
+    <footer>
+        <div class="col3">
+            <h2>TUANS.ID.VN</h2>
+            <div class="chitiet">
+                <p><b>Địa chỉ:</b>139/13 Lê Đức Thọ, Phường 6, Q.Gò Vấp, TP.Hồ Chí Minh.</p>
+                <p><b>Phone:</b>0123456789</p>
+                <p><b>Open:</b>Open: 8:AM - 22:PM </p>
+                <p><b>Email:</b>tuans.id.vn@gmail.com</p>
+            </div>
+        </div>
+        <div class="col3">
+            <h2>HỔ TRỢ KHÁCH HÀNG</h2>
+            <div class="chitiet">
+                <p>Hướng dẫn mua hàng</p>
+                <p>Chính sách bảo mật</p>
+                <p>Hình thức thanh toán</p>
+                <p>Bảo hành và đổi trả</p>
+                <p>Chính sách giao hàng</p>
+            </div>
+        </div>
+        <div class="col3">
+            <h2>THÔNG TIN</h2>
+            <div class="chitiet">
+                <p>Tài khoản</p>
+                <p>Kiểm tra đơn hàng</p>
+                <p>Đăng kí nhận tin</p>
+            </div>
+        </div>
+        <div class="col3">
+            <h2>Chi Nhánh</h2>
+            <div class="chitiet">
+                <p>Quận 7, Phường 3, Đường Số 27</p>
+                <p>Quận Bình Thạnh, Phường 13, Đường Số 25</p>
+                <p>Quận Gò Vấp, Phường 6, Đường Số 28</p>
+                <p>Quận 1, Phường 3, Đường Số 20</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="./js/chitiet.js">
+
+    //   function addToCart(this) {
+    //     // Thực hiện các hành động cần thiết để thêm sản phẩm vào giỏ hàng
+    //     // Ở đây, chúng ta có thể sử dụng các biến hoặc hàm để theo dõi giỏ hàng
+    //     let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
+    //     cart.push(this);
+    //     localStorage.setItem('cart', JSON.stringify(cart));
+    //     alert(this + " đã được thêm vào giỏ hàng!");
+    //   }
+
+
+
+
+    // function addToCart(X) {
+    //     let cartItems = localStorage.getItem('cartItems');
+    //     if (!cartItems) {
+    //         cartItems = {};
+    //     } else {
+    //         cartItems = JSON.parse(cartItems);
+    //     }
+
+    //     if (cartItems[X]) {
+    //         cartItems[X]++;
+    //     } else {
+    //         cartItems[X] = 1;
+    //     }
+
+    //     localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    //     updateCartCount();
+    // }
+
+    // function updateCartCount() {
+    //     let cartItems = localStorage.getItem('cartItems');
+    //     let cartCount = 0;
+    //     if (cartItems) {
+    //         cartItems = JSON.parse(cartItems);
+    //         for (let X in cartItems) {
+    //             cartCount += cartItems[X];
+    //         }
+    //     }
+    //     document.getElementById('cartCount').innerHTML = "<p>Số lượng trong giỏ hàng: " + cartCount + "</p>";
+    // }
+
+    // // Update cart count when page loads
+    // window.onload = function() {
+    //     updateCartCount();
+    // };
+    // function addToCart(product) {
+    //     let cartItems = localStorage.getItem('cartItems');
+    //     if (!cartItems) {
+    //         cartItems = {};
+    //     } else {
+    //         cartItems = JSON.parse(cartItems);
+    //     }
+
+    //     if (cartItems[product]) {
+    //         cartItems[product]++;
+    //     } else {
+    //         cartItems[product] = 1;
+    //     }
+
+    //     localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    //     updateCartCount();
+    //     alert(product + " đã được thêm vào giỏ hàng!");
+    // }
+
+    // function updateCartCount() {
+    //     let cartItems = localStorage.getItem('cartItems');
+    //     let cartCount = 0;
+    //     if (cartItems) {
+    //         cartItems = JSON.parse(cartItems);
+    //         for (let product in cartItems) {
+    //             cartCount += cartItems[product];
+    //         }
+    //     }
+    //     document.getElementById('cartCount').innerHTML = "<p>Số lượng trong giỏ hàng: " + cartCount + "</p>";
+    // }
+
+    // // Update cart count when page loads
+    // window.onload = function() {
+    //     updateCartCount();
+    // };
+
+    let cart = [];
+
+function addToCart(productName, price) {
+    let existingItem = cart.find(item => item.productName === productName);
+    if (existingItem) {
+        existingItem.quantity++;
+    } else {
+        cart.push({ productName, price, quantity: 1 });
+    }
+    updateCart();
+    alert(productName + ' đã được thêm vào giỏ hàng!');
+}
+
+function removeItem(index) {
+    let item = cart[index];
+    if (item.quantity > 1) {
+        item.quantity--;
+    } else {
+        cart.splice(index, 1);
+    }
+    updateCart();
+}
+
+function updateCart() {
+    let cartItems = document.getElementById('cart-items');
+    cartItems.innerHTML = '';
+    let total = 0;
+    cart.forEach((item, index) => {
+        total += item.price * item.quantity;
+        let productItem = document.createElement('div');
+        productItem.classList.add('product-item');
+        let productName = document.createElement('span');
+        productName.textContent = `${item.productName} - $${item.price} - Quantity: ${item.quantity}`;
+        let removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.onclick = function() {
+            removeItem(index);
+        };
+        productItem.appendChild(productName);
+        productItem.appendChild(removeButton);
+        cartItems.appendChild(productItem);
+    });
+    document.getElementById('total').textContent = total;
+}
+
+function checkout() {
+    alert('Thanh toán thành công!');
+    cart = [];
+    updateCart();
+}
+
+function toggleCart() {
+    let cart = document.getElementById('cart');
+    if (cart.style.display === 'block') {
+        cart.style.display = 'none';
+    } else {
+        cart.style.display = 'block';
+    }
+}
+
+
+
+</script>
+
+</html>

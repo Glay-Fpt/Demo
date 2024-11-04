@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="sanpham.css">
+    <script src="sanpham.js"></script>
+    <script src="dangky.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="sanpham.html">Trang Chủ </a>
+        <a href="#"> Phụ Kiện Xe </a>
+        <a href="#"> Đồ Trang Trí </a>
+        <a href="#"> Bảo Dưỡng </a>
+        <a href="dangnhap.html">Đăng Nhập</a>
+        <a href="dangky.html">Đăng Ký</a>
+        <a href="#"><img src="hinh/giohang.png" width="20px" alt=""> </a> 
+    </nav>
+    <div class="container">
+        <h2>Màn Hình Đăng Ký</h2>
+        <form action="dangky_func.php" method="post">
+            <label for="">Nhập Tên: </label> <input name="ten" id="ten" value="" type="text"> <br><br>
+            <label for="">Nhập mật khẩu : </label> <input name="pass" id="pass" value="" type="password"><br><br>
+            <input type="submit" name="dk" value="Đăng Ký" onclick="return kiemtra()">
+        </form>
+</div>
+    <footer>
+        <li>Đ/c: Số XX/XXX, Phường Phú Hữu,TP Thủ Đức, TP.HCM </li>
+        <li>Thời gian: 7h-11h và 13h-17h các ngày trong tuần (off chủ nhật) </li>
+        <li>Thông tin liên hệ: 0909xxxx33 - 0909xxxx88 (Gặp MR.MẬP)</li>
+        <hr>
+        ASSIGNMENT WEB1013 © VÔ DANH . FPT Polytechnic
+    </footer>
+</body>
+</html>

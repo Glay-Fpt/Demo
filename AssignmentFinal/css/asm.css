@@ -1,0 +1,83 @@
+
+.contaner{
+    width: 95%;
+    margin: 0 auto;
+}
+.contaner .col9{
+    margin-bottom:10px ;
+}
+.contaner img{
+    width: 100%;
+    margin-top: 10px;
+}
+.contaner h1{
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    margin-top: 30px;
+    text-shadow: 0 0 10px gray;
+}
+.contaner .col9{
+    display: flex;
+    gap: 10px;
+}
+.contaner .row{
+    width: 25%;
+    border: 1px solid black;
+    box-shadow: 0 0 5px gray;
+}
+.contaner .row img{
+    width: 100%;
+    height: 100%px;
+    margin: 0px;
+}
+.contaner .row .ten {
+    margin: 10px 20px 10px 10px;
+}
+.contaner .row .ten a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+}
+.contaner .row .ten a:hover{
+    color: black;
+}
+.contaner .row .danhgia{
+    margin: 10px 20px 10px 10px;
+}
+.contaner .row .danhgia img{
+    width: 16px;
+    height: 16px;
+}
+.contaner .row .gia{
+    margin: 10px 20px 10px 10px;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contaner .banner{
+    width: 100%;
+    max-height: 400px;
+}
+/*============*/
+.a button{
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 30px;
+}
+
+.logo{
+    position: fixed;
+    z-index: 10000;  
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+

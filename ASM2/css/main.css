@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+}
+header .lienhe{
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+}
+header .timkiem{
+    display: flex;
+    background-color: black;
+    position: relative;
+    width: 100%;
+}
+header .timkiem .logo img{
+    width: 30%;
+    margin: 10px 20px;
+}
+header .timkiem .timkiemsanpham{
+    margin: 10px;
+    position: absolute;
+    top:15px;
+    left: 250px;
+    width: 50%;
+    float: left;
+}
+header .timkiem .timkiemsanpham input{
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+header .timkiem .timkiemsanpham input:focus{
+    box-shadow: 0 0 5px white;
+    background-color: whitesmoke;
+}
+header .timkiem .taikhoan{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+header .timkiem .taikhoan a{
+    margin: 0px 10px;
+    text-decoration: none;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+}
+header .timkiem .taikhoan a:hover{
+   background-color: gray;
+   color: white;
+}
+header nav{
+    background-color:whitesmoke;
+    padding: 8px 10px;
+    border-bottom: 2px solid gray;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li{
+    font-weight: bold;
+    margin: 0px 20px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a:hover{
+    color: red;
+}
+/*====================*/
+footer{
+    border-top:3px solid black ;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+footer .col3{
+    width: 25%;
+    margin: 10px 10px 10px 20px;
+}
+footer .col3 h2{
+    font-weight: bold;
+    text-shadow: 0 0 5px wheat;
+}
+footer .col3 .chitiet{
+    color: gray;
+}
+.contaner .thuonghieu{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 8px 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contaner .thuonghieu p{
+    text-shadow: 0px 0px 5px black ;
+}

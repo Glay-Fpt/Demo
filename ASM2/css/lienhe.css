@@ -1,0 +1,52 @@
+
+/*======================*/
+.contaner{
+    width: 95%;
+    margin: 0 auto;
+}
+.contaner .tieude{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: -1px -1px 0px gray;
+}
+.contaner .thoigian p{
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(85, 83, 83);
+}
+.contaner .thoigian ul{
+    color: grey;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contaner .thoigian ul li{
+    margin: 20px;
+}
+.contaner .map{
+    margin: 30px 0px;
+}
+.contaner .map a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 8px 16px;
+    background-color: aqua ;
+    color: grey;
+}
+.contaner .map a:hover{
+    background-color: gray;
+    color: black;
+}
+.contaner .image{
+    display: flex;
+    gap: 20px;
+    width: 95%;
+}
+.contaner .image img{
+    width: 25%;
+    
+}
+
+/*============*/

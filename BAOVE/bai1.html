@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMG EFFECT</title>
+</head>
+<style>
+    img{
+        width: 100%;
+        height: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    .picture{
+        width: 500px;
+        height: auto;
+        margin: auto;
+    }
+</style>
+<body>
+    <h1>HÌNH CHUYỂN ĐỘNG</h1>
+    <div onmouseover="add()" onmouseout="out()" class="picture">
+        <img src="/IMG/balo.jpg" alt="" id="effect">
+    </div>
+
+</body>
+<script>
+function add(){
+    document.getElementById('effect').src = `/IMG/giaytay.jpg`
+}
+function out(){
+    document.getElementById('effect').src = `/IMG/balo.jpg`
+}
+
+</script>
+</html>

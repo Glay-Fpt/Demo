@@ -1,0 +1,207 @@
+
+
+/*=====================*/
+.contaner{
+    width: 90%;
+    margin: 50px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contaner .row{
+    display: flex;
+    gap: 20px;
+}
+.contaner .row .col-40{
+    width: 40%;
+}
+.contaner .col40{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.contaner .col40 .col10{
+    width: 30%;
+}
+.contaner .col40 .col10 img{
+    width: 100%;
+}
+.contaner .col40 .col30{
+    width: 110%;
+}
+.contaner .col40 .col30 img{
+    width: 100%;
+}
+.contaner .row .col-40 .mota{
+    margin-top: 20px;
+}
+.contaner .row .col-40 .mota span{
+    color: black;
+    font-size: 25px;
+    border-bottom: 1px solid gray;
+}
+.contaner .row .col-40 .mota p{
+    font-size: 17px;
+    color: gray;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+.contaner .col60{
+    width: 60%;
+    height: 200px;
+}
+.contaner .col60 .card{
+    display: flex;
+    gap: 10px;
+}
+.contaner .col60 .card .ten h2{
+    color: black;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+}
+.contaner .col60 .card .ten .danhgia{
+    color: black;
+    margin-top: 10px;
+}
+.contaner .col60 .card .ten .gia{
+    margin-top: 10px;
+}
+.contaner .col60 .card .ten .gia del{
+    color: gray;
+    font-size: 15px;
+}
+.contaner .col60 .card .ten .gia span{
+    color: red;
+    font-size: 25px;
+}
+.contaner .col60 .card .logo img{
+    width: 100px;
+    padding: 5px;
+    border: 1px solid rgb(196, 189, 189);
+}
+.contaner .col60 .card .logo img:hover{
+    box-shadow: 0 0 5px gainsboro;
+}
+.contaner .col60 .thongtin{
+    color: gray;
+    
+}
+.contaner .col60 .thongtin{
+    margin-top: -20px;
+}
+.contaner .col60 .thongtin p{
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+}
+.contaner .col60 .kichthuoc p{
+    color: black;
+    font-size: 25px;
+}
+.contaner .col60 .kichthuoc a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px 5px 30px 10px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    color: black;
+}
+.contaner .col60 .kichthuoc a:hover{
+    background-color: black;
+    color: white;
+}
+.contaner .col60 .mua{
+    margin-top: 30px;
+    text-align: center;
+}
+.contaner .col60 .mua button{
+    padding: 15px;
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.contaner .col60 .mua button:hover{
+    background-color: aqua;
+}
+.contaner .col60 .chinhsach{
+    margin-top: 30px;
+    color: black;
+}
+.contaner .col60 .chinhsach li{
+    font-size: 20px;
+    line-height: 1.7;
+    border-bottom: 4px dotted gray;
+    font-weight: bold;
+}
+.contaner .col60 .diachi{
+    padding: 10px 30px 20px 30px;
+    border: 4px dotted gray ;
+    width: 50%;
+    margin-top: 20px;
+}
+.contaner .col60 .diachi p{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contaner .col60 .diachi a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+.contaner .col60 .diachi a:hover{
+    background-color: gainsboro;
+}
+/*==========*/
+
+.tuongtu p{
+    font-size: 25px;
+    border-bottom: 2px solid gray;
+    width: 18%;
+}
+.tuongtu .col25{
+    width: 25%;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.tuongtu .col25:hover{
+    transform: scale(1.05);
+}
+.tuongtu .col25 img{
+    width: 100%;
+}
+.tuongtu .col25 .ten{
+    margin: 10px 20px 10px 10px;
+}
+.tuongtu .col25 .ten a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+}
+.tuongtu .col25 .ten a:hover{
+    color: black;
+}
+.tuongtu .col25 .danhgia{
+    margin: 10px 20px 10px 10px;
+}
+.tuongtu .col25 .danhgia img{
+    width: 16px;
+    height: 16px;
+}
+.tuongtu .col25 .gia{
+    margin: 10px 20px 10px 10px;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/AssignmentFinal/css/login.css">
+    <link rel="icon" type="image/png" href="/IMG/TUANS.png">
+
+    <title>TUANS | MUA ONLINE QUẦN ÁO VÀ PHỤ KIỆN NAM NỮ THỜI TRANG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="box">
+        <div class="headersreach">
+            <div class="headermid">
+                <div class="headermid-left">
+                    <div class=""><a href="index.html"><img src="/IMG/TUANS.png" width="100px"></a></div>
+                    <div class="p1">
+                        <input type="text" placeholder="Tìm Kiếm">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <p><i class="fa-solid fa-location-dot"></i><a href="#">VỊ TRÍ</a> </p>
+                <p><i class="fa-solid fa-phone"></i>GỌI ĐẶT HÀNG : 0123456789 </p>
+            </div>
+            <div class="headerbottom">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">NAM</a>
+                            <ul>
+                                <li><a href="#">ÁO NAM</a></li>
+                                <li><a href="#">QUẦN NAM</a></li>
+                                <li><a href="#">ÁO KHOÁC NAM</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">NỮ</a>
+                            <ul>
+                                <li><a href="#">ÁO NỮ</a></li>
+                                <li><a href="#">QUẦN NỮ</a></li>
+                                <li><a href="#">ÁO KHOÁC NỮ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">BỘ SƯU TẬP</a>
+                            <ul>
+                                <li><a href="#">MÙA XUÂN 2024</a></li>
+                                <li><a href="#">MÙA HÈ 2024</a></li>
+                                <li><a href="#">PREMIUM</a></li>
+                                <li><a href="#">TUANS X ONE PIECE</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">PHỤ KIỆN</a>
+                            <ul>
+                                <li><a href="#">NÓN</a></li>
+                                <li><a href="#">TÚI VẢI ĐEO CHÉO</a></li>
+                                <li><a href="#">BALO</a></li>
+                                <li><a href="#">VÍ</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="report.html">GÓP Ý</a></li>
+                    </ul>
+                </nav>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                GIỎ HÀNG</a></li>
+                        <li><a href="login.html"> ĐĂNG NHẬP / ĐĂNG KÍ</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="body">
+            <div class="form-container">
+                <div class="form-header">
+                    <h4>
+                        ĐĂNG NHẬP
+                    </h4>
+                </div>
+
+                <div class="login-form">
+                    <input type="text" class="dangnhap" placeholder="Tên Đăng Nhập" name="ten" id="ten" value="" type="text">
+                    <input type="password" class="dangnhap" placeholder="Mật Khẩu" name="pass" id="pass" value="" type="password">
+                    <button class="button" type="submit" onclick="return luuDulieu()">Đăng Nhập</button>
+                    <div class="trogiup">
+                        <div class="login-form-rememberMe">
+                            <input type="checkbox" class="rememberme" id="checkbox_id">
+                            <label class="remember" for="checkbox_id">Ghi nhớ mật khẩu</label>
+                        </div>
+                        <a class="help" href="#">Quên mật khẩu?</a>
+                    </div>
+                </div>
+
+                <div class="facebook">
+                    <a href="#" class="fb">
+                        <img class="fb-icon"
+                            src="https://assets.nflxext.com/ffe/siteui/login/images/FB-f-Logo__blue_57.png" alt="">
+                        <span class="login-fb-text">Đăng nhập bằng Facebook</span>
+                    </a>
+
+                    <div class="dangki">
+                        Chưa có tài khoản?
+                        <a href="register.html" class="newlogin">Đăng kí ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo">
+        <a href="https://zalo.me/0931632195/"><img src="https://page.widget.zalo.me/static/images/2.0/Logo.svg"
+                width="100%"></a>
+    </div>
+
+    <footer>
+        <div class="col3">
+            <h2>TUANS.ID.VN</h2>
+            <div class="chitiet">
+                <p><b>Địa chỉ:</b>139/13 Lê Đức Thọ, Phường 6, Q.Gò Vấp, TP.Hồ Chí Minh.</p>
+                <p><b>Phone:</b>0123456789</p>
+                <p><b>Open:</b>Open: 8:AM - 22:PM </p>
+                <p><b>Email:</b>tuans.id.vn@gmail.com</p>
+            </div>
+        </div>
+        <div class="col3">
+            <h2>HỔ TRỢ KHÁCH HÀNG</h2>
+            <div class="chitiet">
+                <p>Hướng dẫn mua hàng</p>
+                <p>Chính sách bảo mật</p>
+                <p>Hình thức thanh toán</p>
+                <p>Bảo hành và đổi trả</p>
+                <p>Chính sách giao hàng</p>
+            </div>
+        </div>
+        <div class="col3">
+            <h2>THÔNG TIN</h2>
+            <div class="chitiet">
+                <p>Tài khoản</p>
+                <p>Kiểm tra đơn hàng</p>
+                <p>Đăng kí nhận tin</p>
+            </div>
+        </div>
+        <div class="col3">
+            <h2>Chi Nhánh</h2>
+            <div class="chitiet">
+                <p>Quận 7, Phường 3, Đường Số 27</p>
+                <p>Quận Bình Thạnh, Phường 13, Đường Số 25</p>
+                <p>Quận Gò Vấp, Phường 6, Đường Số 28</p>
+                <p>Quận 1, Phường 3, Đường Số 20</p>
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        function luuDulieu() {
+            var tenDangNhap = document.querySelector('.dangnhap[name="tenDangNhap"]').value;
+            var matKhau = document.querySelector('.dangnhap[name="matKhau"]').value;
+    
+            if (tenDangNhap && matKhau) { // Kiểm tra xem đã nhập tên đăng nhập và mật khẩu chưa
+                localStorage.setItem('tenDangNhap', tenDangNhap);
+                localStorage.setItem('matKhau', matKhau);
+                window.location.href = "index.html"; // Chuyển hướng đến trang index
+            } else {
+                alert("Vui lòng nhập tên đăng nhập và mật khẩu!"); // Thông báo yêu cầu nhập dữ liệu
+            }
+        }
+    
+        window.onload = function() {
+            var tenDangNhap = localStorage.getItem('tenDangNhap');
+            var matKhau = localStorage.getItem('matKhau');
+    
+            if (tenDangNhap !== null) {
+                document.querySelector('.dangnhap[name="tenDangNhap"]').value = tenDangNhap;
+            }
+            if (matKhau !== null) {
+                document.querySelector('.dangnhap[name="matKhau"]').value = matKhau;
+            }
+        };
+    </script>
+</body>
+
+</html>
